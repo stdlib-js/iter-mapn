@@ -34,32 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-mapn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterMapN = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@umd/browser.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterMapN;
-})();
-</script>
+var iterMapN = require( '@stdlib/iter-mapn' );
 ```
 
 #### iterMapN( iter0, ...iterator, fcn\[, thisArg] )
@@ -181,14 +179,9 @@ var count = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterSineWave = require( '@stdlib/simulate-iter-sine-wave' );
+var iterMapN = require( '@stdlib/iter-mapn' );
 
 function add( x, y ) {
     return x + y;
@@ -220,11 +213,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -326,7 +314,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/map]: https://github.com/stdlib-js/iter-map/tree/umd
+[@stdlib/iter/map]: https://github.com/stdlib-js/iter-map
 
 <!-- </related-links> -->
 
