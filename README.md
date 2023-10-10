@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-mapn/tags). For example,
+
+```javascript
 import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.1.1-esm/index.mjs';
 ```
 
@@ -181,7 +186,7 @@ var count = ctx.count;
 <script type="module">
 
 import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@esm/index.mjs';
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.1.1-esm/index.mjs';
+import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@esm/index.mjs';
 
 function add( x, y ) {
     return x + y;
