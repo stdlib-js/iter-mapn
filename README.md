@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-mapn/tags). For example,
+
+```javascript
 import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.1.1-deno/mod.js';
 ```
 
@@ -176,7 +181,7 @@ var count = ctx.count;
 
 ```javascript
 import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@deno/mod.js';
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.1.1-deno/mod.js';
+import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@deno/mod.js';
 
 function add( x, y ) {
     return x + y;
