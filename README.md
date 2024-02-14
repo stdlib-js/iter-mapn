@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+iterMapN = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-mapn/tags). For example,
+
+```javascript
 iterMapN = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.0-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var iterMapN = require( 'path/to/vendor/umd/iter-mapn/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -203,7 +208,7 @@ var count = ctx.count;
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
