@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@deno/mod.js';
+import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.1-deno/mod.js';
 ```
 
 #### iterMapN( iter0, ...iterator, fcn\[, thisArg] )
@@ -176,7 +176,7 @@ var count = ctx.count;
 
 ```javascript
 import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@deno/mod.js';
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@deno/mod.js';
+import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.1-deno/mod.js';
 
 function add( x, y ) {
     return x + y;
