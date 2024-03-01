@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-mapn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-mapn/tags). For example,
-
-```javascript
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.1-deno/mod.js';
+var iterMapN = require( '@stdlib/iter-mapn' );
 ```
 
 #### iterMapN( iter0, ...iterator, fcn\[, thisArg] )
@@ -65,7 +78,7 @@ import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@v0.2.1-den
 Returns an [iterator][mdn-iterator-protocol] which transforms iterated values from two or more [iterators][mdn-iterator-protocol] by applying the iterated values as arguments to a provided function.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function transform( x, y ) {
     return x + y;
@@ -98,7 +111,7 @@ The invoked `function` is provided `N+1` arguments, where `N` is the number of p
 -   `index`: iteration index (zero-based)
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function transform( x, y, i ) {
     return x + y + i;
@@ -125,7 +138,7 @@ To set the callback execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function transform( x, y ) {
     this.count += 1;
@@ -180,8 +193,8 @@ var count = ctx.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@deno/mod.js';
-import iterMapN from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-mapn@deno/mod.js';
+var iterSineWave = require( '@stdlib/simulate-iter-sine-wave' );
+var iterMapN = require( '@stdlib/iter-mapn' );
 
 function add( x, y ) {
     return x + y;
@@ -250,7 +263,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -280,8 +293,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-mapn.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-mapn
 
-[test-image]: https://github.com/stdlib-js/iter-mapn/actions/workflows/test.yml/badge.svg?branch=v0.2.1
-[test-url]: https://github.com/stdlib-js/iter-mapn/actions/workflows/test.yml?query=branch:v0.2.1
+[test-image]: https://github.com/stdlib-js/iter-mapn/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/iter-mapn/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-mapn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-mapn?branch=main
@@ -317,7 +330,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/map]: https://github.com/stdlib-js/iter-map/tree/deno
+[@stdlib/iter/map]: https://github.com/stdlib-js/iter-map
 
 <!-- </related-links> -->
 
